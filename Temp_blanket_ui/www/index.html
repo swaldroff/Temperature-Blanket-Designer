@@ -1,0 +1,130 @@
+<html>
+
+<head>
+  
+  <script src="shared/jquery.js" type="text/javascript"></script>
+  <script src="shared/shiny.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="shared/shiny.css"/>
+  <title>Temperature Blanket Designer</title>
+</head>
+
+<body>
+
+  <h1>Temperature Blanket Designer</h1>
+  
+  <table><tr>
+          <td>{{ ddState }}</td>
+          <td>{{ ddStation }}</td>
+          <td>{{ btnLoadWeather }}</td>
+          </tr>
+  </table>
+  <div id = "toggleSummary" class="shinyjs-hide">
+  {{lnkToggleSummary}}
+  <table>
+    <tr>
+      <td>{{weatherSummary}}</td>
+      <td><div id="histTemp" class="shiny-plot-output" style="width: 500px; height: 300px"></div></td>
+    </tr>
+  </table>
+  </div>
+  <p></p>
+  <div>{{cpicker}}</div>
+<table width="75%">
+<thead>
+  <tr>
+    <th>Lower Bound</th>
+    <th>Upper Bound</th>
+    <th>HTML Color Code</th>
+    <th>Color Name</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>{{ txtLb1 }}</td>
+    <td>{{ txtUb1 }}</td>
+    <td>{{ txtCode1 }}</td>
+    <td>{{ txtName1 }}</td>
+  </tr>
+  <tr>
+    <td>{{ txtLb2 }}</td>
+    <td>{{ txtUb2 }}</td>
+    <td>{{ txtCode2 }}</td>
+    <td>{{ txtName2 }}</td>
+  </tr>
+  <tr>
+    <td>{{ txtLb3 }}</td>
+    <td>{{ txtUb3 }}</td>
+    <td>{{ txtCode3 }}</td>
+    <td>{{ txtName3 }}</td>
+  </tr>
+  <tr>
+    <td>{{ txtLb4 }}</td>
+    <td>{{ txtUb4 }}</td>
+    <td>{{ txtCode4 }}</td>
+    <td>{{ txtName4 }}</td>
+  </tr>
+  <tr>
+    <td>{{ txtLb5 }}</td>
+    <td>{{ txtUb5 }}</td>
+    <td>{{ txtCode5 }}</td>
+    <td>{{ txtName5 }}</td>
+  </tr>
+  <tr>
+    <td>{{ txtLb6 }}</td>
+    <td>{{ txtUb6 }}</td>
+    <td>{{ txtCode6 }}</td>
+    <td>{{ txtName6 }}</td>
+  </tr>
+  <tr>
+    <td>{{ txtLb7 }}</td>
+    <td>{{ txtUb7 }}</td>
+    <td>{{ txtCode7 }}</td>
+    <td>{{ txtName7 }}</td>
+  </tr>
+  <tr>
+    <td>{{ txtLb8 }}</td>
+    <td>{{ txtUb8 }}</td>
+    <td>{{ txtCode8 }}</td>
+    <td>{{ txtName8 }}</td>
+  </tr>
+  <tr>
+    <td>{{ txtLb9 }}</td>
+    <td>{{ txtUb9 }}</td>
+    <td>{{ txtCode9 }}</td>
+    <td>{{ txtName9 }}</td>
+  </tr>
+    <tr>
+    <td>{{ txtLb10 }}</td>
+    <td>{{ txtUb10 }}</td>
+    <td>{{ txtCode10 }}</td>
+    <td>{{ txtName10 }}</td>
+  </tr>
+    <tr>
+    <td>{{ txtLb11 }}</td>
+    <td>{{ txtUb11 }}</td>
+    <td>{{ txtCode11 }}</td>
+    <td>{{ txtName11 }}</td>
+  </tr>
+    <tr>
+    <td>{{ txtLb12 }}</td>
+    <td>{{ txtUb12 }}</td>
+    <td>{{ txtCode12 }}</td>
+    <td>{{ txtName12 }}</td>
+  </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>{{ btnGenerateGraph }}</td>
+  </tr>
+</tbody>
+</table>
+    
+<p></p>
+  <div id="tempPlot" class="shiny-plot-output"
+       style="width: 100%; height: 300px"></div>
+
+  
+
+</body>
+</html>
